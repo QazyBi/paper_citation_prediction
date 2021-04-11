@@ -24,11 +24,33 @@ model selection:
 
 
 gridSearch: diagram
+r2-score: 0.8865324955807499
 
+best parameters:
+{
+ 'colsample_bytree': 0.7,
+ 'learning_rate': 0.07,
+ 'max_depth': 6,
+ 'min_child_weight': 4,
+ 'n_estimators': 500,
+ 'nthread': 4,
+ 'objective': 'reg:linear',
+ 'silent': 1,
+ 'subsample': 0.7
+ }
 
 feature importance: diagram
 
 
+
+## 5. Conclusion
+In this project, I analyzed metadata of research papers. The data consist various information like: authors, year of publishing, paper abstract, citations, journal name, field of study, link and etc. There were about a million paper data in the dataset, I had to use all the necessary features to predict how many citations new papers will have.
+
+I retrieved the data from the source. Used pandas dataframes to work with data. After preprocessing steps, I analyzed factors that correlated with number of citations, and did some exploratory visualization and analysis.
+
+When the data was cleaned and features selected I created boosting model which uses predictions of several simple models to predict number of citations paper will have.  
+
+You can refer to the `task.ipynb` file to find more. 
 
 Side-note
 If I am using non-public data, and you are the author, please contact me.
