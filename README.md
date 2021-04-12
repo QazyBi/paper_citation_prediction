@@ -4,23 +4,21 @@ Main question: How can we predict number of citations of a paper before it has b
 
 ## 1. Parsing data
 - data has been downloaded from the storage as .gz format 
+- there are 30 archived files with about 60 MB unarchived
 
 ## 2. Data pre-processing
-- dataset is about **1M** rows
+- dataset is about **950k** rows
 - most of the columns of type object
-- 
+- h-index, g-index columns were created from citation numbers 
 
 ## 3. Data Analysis
-
-
 observations:
-- data is imbalanced: diagram
-- 
+- data is imbalanced, most of the papers have 0 or 1 citations
 
 ## 4. Predict the number of citations
 
 model selection:
-- xgboost
+- xgboost as it allows to gain more performance with no serious time penalty
 
 
 gridSearch: diagram
