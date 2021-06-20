@@ -1,5 +1,7 @@
 # Predict Number of Citations of a Paper
 
+[Link to colab](https://colab.research.google.com/drive/1YTMp0bXqgiY5awddnJ2Z2NHhs-mcmyum?usp=sharing)
+
 Main question: How can we predict number of citations of a paper before it has been published?
 
 ## 1. Parsing data
